@@ -1,0 +1,95 @@
+.resume{
+    width: 100%;
+    padding: 70px 30px;
+    @media only screen and (max-width: 989px){
+        padding: 0;
+    }
+    .container{
+        padding: 70px 50px;
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: #F5F4FC;
+        display: flex;
+        gap: 6%;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        @media only screen and (max-width: 989px){
+            padding: 70px 20px;
+        }
+        h2{
+            color: #4831D4;
+            letter-spacing: 2px;
+            position: relative;
+            z-index: 10;
+            display: inline-block;
+            margin-bottom: 0;
+            font-size: 40px;
+        }
+        .btn-back{
+            position: absolute;
+            left: 50px;
+        }
+
+        h2::after{
+            content: "";
+            height: 8px;
+            width: 100%;
+            background-color: #CCF381;
+            display: block;
+            transform: translateY(-10px);
+            position: relative;
+            z-index: -1;
+        }
+
+        .grid-card{
+            display: flex;
+            max-width: 850px;
+            width: 100%;
+            flex-direction: column;
+            margin: 0 auto;
+            margin-top: 40px;
+            gap: 30px;
+            .card{
+                background-color: #fff;
+                padding: 30px;
+                max-width: 70%;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: row;
+                box-shadow: 9px 7px 14px 9px rgb(24 20 20 / 11%);
+                gap: 20px;
+                justify-content: space-between;
+                @media only screen and (max-width: 767px){
+                    width: 100%;
+                    max-width: 100%;
+                    flex-direction: column;
+                }
+                .img{
+                    max-width: 200px;
+                    display: flex;
+                    align-items: center;
+                    img{
+                        width: 100%;
+                    }
+                }
+                &:nth-child(odd){
+                    margin-left: auto;
+                    @media only screen and (max-width: 767px){
+                        margin:0;
+                    }
+                }
+                h3{
+                    color: #18133a;
+                    letter-spacing: 1px;
+                }
+                a{
+                    text-decoration: none;
+                    color: #18133a;
+                    cursor: pointer;
+                }
+            }
+        }
+        
+    }
+}

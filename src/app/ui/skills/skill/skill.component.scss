@@ -1,0 +1,90 @@
+.resume{
+    width: 100%;
+    padding: 70px 30px;
+    @media only screen and (max-width: 989px){
+        padding: 0;
+    }
+    .container{
+        padding: 70px 50px;
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: #F5F4FC;
+        display: flex;
+        gap: 6%;
+        @media only screen and (max-width: 989px){
+            flex-direction: column;
+            padding: 70px 20px;
+        }
+        aside{
+            width: 35%;
+            @media only screen and (max-width: 989px){
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        h2, h4, h1{
+            color: #4831D4;
+            display: inline;
+            letter-spacing: 2px;
+        }
+        h1{
+            font-size: 60px;
+            margin-bottom: 20px;
+            line-height: 65px;
+        }
+        h4{
+            font-size: 22px;
+            margin-bottom: 10px;
+            z-index: 10;
+            position: relative;
+            display: inline-block;
+        }
+        h2{
+            z-index: 10;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 0;
+        }
+        h4::after, h3::after, h2::after{
+            content: "";
+            height: 8px;
+            width: 100%;
+            background-color: #CCF381;
+            display: block;
+            transform: translateY(-10px);
+            position: relative;
+            z-index: -1;
+        }
+        ul{
+            margin-top: 10px;
+            li{
+                padding: 7px 0;
+                font-size: 17px;
+            }
+        }
+        h5{
+            font-size: 20px;
+            font-weight: 400;
+            margin-top: 20px;
+        }
+        .experience{
+            border-top: 1px solid #ddd;
+        }
+
+        .card{
+            margin-top: 30px;
+            h3{
+                color: #4831D4;
+                letter-spacing: 1px;
+                margin-bottom: 0;
+                display: inline-block;
+                margin-right: 10px;
+            }
+            span::before{
+                content: '— ';
+            }
+        }
+        
+    }
+}

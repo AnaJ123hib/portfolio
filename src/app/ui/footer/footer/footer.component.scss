@@ -1,0 +1,48 @@
+.footer{
+    background: #3D155F;
+    box-sizing: border-box;
+    padding: 20px 0;
+
+    .container{
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 50px 30px;
+        display: flex;
+        gap: 30px;
+        justify-content: space-between;
+        h3{
+            color: #fff;
+            font-weight: 500;
+            letter-spacing: 2px;
+            font-size: 30px;
+        }
+        .column{
+            width: 30%;
+            @media only screen and (max-width: 767px){
+                width: 100%;
+            }
+            .contact{
+                a{
+                    color: #fff;
+                    text-decoration: none;
+                    transition: color .3s;
+                    &:hover{
+                        color: #CCF381;
+                    }
+                }
+            }
+        }
+        @media only screen and (max-width: 767px){
+            flex-direction: column;
+        }
+       
+    }
+    .copy{
+        padding: 20px 0;
+        border-top: 1px solid #fff;
+        max-width: 1000px;
+        text-align: center;
+        margin: 0 auto;
+        color: #fff;
+    }
+}
